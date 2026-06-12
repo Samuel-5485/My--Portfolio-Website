@@ -1,9 +1,10 @@
-import React, {useRef} from 'react'
+import React, {useRef, useEffect, useState} from 'react'
 import Image from 'next/image';
 import {assets} from "@/assets/assets";
 
 const Navbar = () =>{
 
+    const[isScroll, setIsScroll] = useState(false)
     const sideMenuRef = useRef();
 
         const openMenuRef = ()=>{
@@ -15,6 +16,15 @@ const Navbar = () =>{
         const closeMenu = ()=>{
             sideMenuRef.current.style.transform = 'translateX(16rem)'
         }
+        useEffect(()=>{
+            window.addEventListener('scroll', ()=>{
+                if(scrollY > 50){
+                    setIsScroll(true)
+                }else{
+                    setIsScroll(false)
+                }
+            })
+        })
 
     return(
         <>

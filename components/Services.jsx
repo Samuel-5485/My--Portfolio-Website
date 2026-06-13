@@ -19,7 +19,7 @@ const Services = () => {
             </p>
 
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 my-10">
+            <div className="grid grid-cols-1 sm:grid-cols-3 sm:grid-cols-4 gap-6 my-10">
 
                 {serviceData.map(({icon, title, description, link}, index)=>(
                     

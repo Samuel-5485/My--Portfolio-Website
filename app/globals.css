@@ -1,5 +1,44 @@
 @import "tailwindcss";
+@tailwind components;
+@tailwind utilities;
+@config "../tailwind.config.mjs";
 
-*{
-  font-family: 'Outfit';
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+@layer base {
+  body {
+    @apply bg-white text-gray-900;
+  }
+
+  .dark body {
+    @apply bg-darkTheme text-white;
+  }
+}
+
+
+@layer utilities {
+
+  .animate-bounce-slow {
+    animation: bounce-slow 3s ease-in-out infinite;
+  }
+
+
+  @keyframes bounce-slow {
+
+    0%, 100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-20px);
+    }
+
+  }
+
+}
+
+
+* {
+  font-family: 'Outfit', sans-serif;
 }

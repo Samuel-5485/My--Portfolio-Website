@@ -4,6 +4,8 @@ import code_icon_dark from './code-icon-dark.png';
 import edu_icon from './edu-icon.png';
 import edu_icon_dark from './edu-icon-dark.png';
 import project_icon from './project-icon.png';
+import type_icon from './typing.png';
+import type_icon_dark from './type_icon_dark.gif';
 import project_icon_dark from './project-icon-dark.png';
 import vscode from './vscode.png';
 import firebase from './firebase.png';
@@ -47,6 +49,8 @@ export const assets = {
     edu_icon,
     edu_icon_dark,
     project_icon,
+    type_icon, 
+    type_icon_dark,
     project_icon_dark,
     vscode,
     firebase,
@@ -116,9 +120,10 @@ export const serviceData = [
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript, Python' },
+    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'Undergraduate in Computer Science' },
+    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'check out my projects' },
+    { icon: assets.type_icon, iconDark: assets.type_icon_dark, title: 'Typing', description: 'Check out my type speed on typemonkey' }
 ];
 
 export const toolsData = [

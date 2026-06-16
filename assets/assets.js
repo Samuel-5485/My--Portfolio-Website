@@ -11,7 +11,8 @@ import vscode from './vscode.png';
 import firebase from './firebase.png';
 import figma from './figma.png';
 import git from './git.png';
-import mongodb from './mongodb.png';
+import sql from './sql.png';
+import oracle from './oracle.png';
 import right_arrow_white from './right-arrow-white.png';
 import logo from './logo.png';
 import logo_dark from './logo_dark.png';
@@ -33,7 +34,9 @@ import close_white from './close-white.png';
 import web_icon from './web-icon.png';
 import mobile_icon from './mobile-icon.png';
 import ui_icon from './ui-icon.png';
-import graphics_icon from './graphics-icon.png';
+import machine from './machine.png';
+import content_Write from './content_Write.png';
+import data_analysis from './data_analysis.png';
 import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
@@ -56,7 +59,8 @@ export const assets = {
     firebase,
     figma,
     git,
-    mongodb,
+    sql,
+    oracle,
     right_arrow_white,
     logo,
     logo_dark,
@@ -78,7 +82,9 @@ export const assets = {
     web_icon,
     mobile_icon,
     ui_icon,
-    graphics_icon,
+    data_analysis,
+    content_Write,
+    machine,
     right_arrow,
     send_icon,
     right_arrow_bold,
@@ -92,7 +98,7 @@ export const assets = {
 export const workData = [
     {
         title: 'Frontend project',
-        description: 'Web Design',
+        description: 'Building responsive and interactive websites',
         bgImage: '/work-1.png',
     },
     {
@@ -113,11 +119,15 @@ export const workData = [
 ];
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
-]
+    { icon: assets.web_icon, title: 'Web design', description: 'Building responsive and interactive websites.', fullDescription: 'I create modern, responsive, and user-friendly web interfaces using HTML, CSS, JavaScript, React, Next.js, and Tailwind CSS. My focus is on delivering fast, accessible, and visually appealing websites.', link: '' },
+    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Developing complete web applications.', fullDescription: 'I build full-stack applications that combine intuitive user interfaces with powerful backend systems, including databases, APIs, authentication, and deployment.', link: '' },
+    { icon: assets.ui_icon, title: 'UI/UX design', description: 'Creating clean, responsive, and user-friendly interfaces that enhance user experience.', fullDescription: 'I transform ideas and design concepts into modern, responsive, and interactive user interfaces. By focusing on usability, accessibility, and performance, I create digital experiences that are both visually appealing and easy to use. My goal is to ensure that every application delivers a seamless experience across different devices and screen sizes.', link: '' },
+    { icon: assets.machine, title: 'Machine Learning Projects', description: 'Creating intelligent systems powered by data.', fullDescription: 'I work with Python and machine learning libraries to build predictive models, classification systems, and data-driven solutions.', link: '' },
+    { icon: assets.data_analysis, title: 'Data Analysis', description: 'Turning data into meaningful insights.', fullDescription: 'I analyze, clean, and visualize data to uncover patterns and support better decision-making through reports and visualizations.', link: '' },
+    { icon: assets.content_Write, title: 'Content Writing', description: 'Crafting clear, engaging, and audience-focused content for digital platforms.', fullDescription: "I create well-structured and engaging content that communicates ideas effectively. Whether it's website content, technical documentation, blog articles, or project descriptions, I focus on clarity, readability, and delivering value to the target audience. Good content not only informs but also helps build trust and engagement.", link: '' },
+    
+    
+]   
 
 export const infoList = [
     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript, Python' },
@@ -127,5 +137,5 @@ export const infoList = [
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+    assets.vscode, assets.firebase, assets.figma, assets.git, assets.sql, assets.oracle
 ];

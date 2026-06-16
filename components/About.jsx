@@ -23,8 +23,12 @@ const About = ({ isDarkMode }) => {
 
 </div>
                 <div className='flex-1'>
-                    <p className='mb-10 max-w-2xl font-Ovo text-gray-600 dark:text-gray-300'>I am an experienced developer with a passion for creating innovative solutions.
-                        I have had the privilege of working with various technologies and teams to bring ideas to life.</p>
+                    <p className='mb-10 max-w-2xl font-Ovo text-gray-600 dark:text-gray-300'>I'm Sami Diriba, a Computer Science student at Ambo University and an aspiring 
+                        Full-Stack Developer and Machine Learning Engineer. 
+                        I enjoy building web applications, learning new technologies, and working on projects that solve real-world problems. 
+                        Through continuous learning and hands-on experience, 
+                        I strive to improve my skills in software development, data science, and artificial intelligence.
+.</p>
                     <ul className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl'>
                         {infoList.map(({ icon, iconDark, title, description },
                             index) => (

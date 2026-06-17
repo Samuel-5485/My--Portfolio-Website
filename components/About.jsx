@@ -108,7 +108,7 @@ const About = ({ isDarkMode }) => {
                 </div>
             </div>
 
-                            {/**--Certification model */}
+                           
 
                     {/* Certifications Modal */}
 {showCertifications && (
@@ -166,7 +166,7 @@ const About = ({ isDarkMode }) => {
     </div>
 
   </div>
-)}                         {/**--certification models */}
+)}                         {/**--certification models 
                             {certifications.map((cert, index) => (
                                 <a
                                     key={index}
@@ -190,7 +190,7 @@ const About = ({ isDarkMode }) => {
                                     View Certificate →
                                     </p>
                                 </a>
-                                ))}
+                                ))} */}
                                                 
 
                             {/**--Experience showcase */}

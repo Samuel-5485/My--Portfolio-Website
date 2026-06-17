@@ -76,17 +76,17 @@ export const assets = {
 
 export const workData = [
     {
-        title: 'MultiLinguaAI',
-        description: 'AI-powered multilingual education platform',
-        technologies:'React • Python • AI',
+        title: 'Academy Portal Management System',
+        description: 'Academic Portal Project this project emphasized of object oriented programming...',
+        technologies:'Java',
         bgImage: '/work-1.png',
-        github:'...',
+        github:'https://github.com/Samuel-5485/academic_portal_project_feature_of_Oop_using_java_programming',
         live:'...'
     },
     {
         title: 'Portfolio Website',
         description: 'Personal portfolio with dark mode',
-        technologies:'Next.js • React',
+        technologies:'JavaScript • Next.js • React',
         bgImage: '/work-2.png',
         github:'...',
         live:'...'
@@ -101,18 +101,18 @@ export const workData = [
     },
     {
         title: 'Happy Birthday Gift',
-        description: 'UI/UX Design',
+        description: 'Happy birthday gift you can give for your friends...',
         bgImage: '/happy_birthday_homepage.png',
         technologies:'TypeScript • React',
         github:'https://github.com/Samuel-5485/happy-birthday-gift-projects-',
         live:'https:happy-birthday-gift-projects.vercel.app'
     },
       {
-        title: 'Employee Management System',
-        description: 'UI/UX Design',
+        title: 'Secure User Authentication System',
+        description: 'This project is a full-stack application designed to provide secure user authentication using modern web technologies.',
         bgImage: '/work-4.png',
-        technologies:'TypeScript • React',
-        github:'https://github.com/Samuel-5485/PRODIGY_FS_02/tree/main/Employee%20Management%20System',
+        technologies:'Frontend • Backend',
+        github:'https://github.com/Samuel-5485/PRODIGY_FS_01/tree/main',
         live:'...'
       } 
 ];

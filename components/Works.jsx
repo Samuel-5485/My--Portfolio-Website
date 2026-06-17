@@ -24,7 +24,7 @@ const Works = ({ isDarkMode }) => {
                     >
 
                     <div
-                        className="h-30 sm:h-40 w-full bg-cover bg-center group-hover:scale-110 transition duration-700"
+                        className="h-45 sm:h-53 w-full bg-cover bg-center group-hover:scale-110 transition duration-700"
                         style={{ backgroundImage: `url(${project.bgImage})` }}
                     />
 

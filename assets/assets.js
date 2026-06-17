@@ -36,7 +36,7 @@ import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import work1 from './work-1.png';
 import work2 from './work-2.png';
 import work3 from './work-3.png';
-import work4 from './work-4.png';
+import happy_birthday_homepage_image from './happy_birthday_homepage.png';
 
 export const assets = {
     user_image,
@@ -71,7 +71,7 @@ export const assets = {
     work1,
     work2,
     work3,
-    work4
+    happy_birthday_homepage_image
 };
 
 export const workData = [
@@ -102,7 +102,7 @@ export const workData = [
     {
         title: 'Happy Birthday Gift',
         description: 'UI/UX Design',
-        bgImage: '/work-4.png',
+        bgImage: '/happy_birthday_homepage.png',
         technologies:'TypeScript • React',
         github:'https://github.com/Samuel-5485/happy-birthday-gift-projects-',
         live:'https:happy-birthday-gift-projects.vercel.app'

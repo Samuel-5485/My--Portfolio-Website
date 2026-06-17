@@ -2,6 +2,7 @@ import React from "react";
 import { assets, infoList, toolsData } from '@/assets/assets';
 import Image from "next/image";
 import { useState } from 'react';
+import {FaArrowRight, FaTimes } from "react-icons/fa";
 
 const About = ({ isDarkMode }) => {
     const [showModal, setShowModal] = useState(false);
@@ -19,8 +20,8 @@ const About = ({ isDarkMode }) => {
                         
                          <button
                                     onClick={() => setShowModal(true)}
-                                    className="mt-0 px-6 py-2 border border-gray-400 dark:border-white/30 rounded-full hover:bg-lightHover dark:hover:bg-darkHover transition">
-                                    Read More →
+                                    className="mt-0 px-4 py-2 border border-gray-400 dark:border-white/30 rounded-full hover:bg-lightHover dark:hover:bg-darkHover transition flex items-center gap-2">
+                                    Read more<FaArrowRight/>
                                     </button>
                             {/*--Show Modal--*/}
                       
@@ -30,9 +31,9 @@ const About = ({ isDarkMode }) => {
 
                             <button
                                 onClick={() => setShowModal(false)}
-                                className="absolute top-4 right-4 text-2xl"
+                                className="absolute top-4 right-4 text-xl hover:text-red-500 transition"
                             >
-                                ✕
+                                 <FaTimes />
                             </button>
 
                             <h2 className="text-3xl font-Ovo mb-6">
@@ -70,17 +71,15 @@ const About = ({ isDarkMode }) => {
                       
                         
                     <ul className='grid grid-cols-1 sm:grid-cols-2  gap-6 max-w-2xl'>
-                        {infoList.map(({ icon, iconDark, title, description },
+                        {infoList.map(({ icon, title, description },
                             index) => (
-                            <li className='border border-gray-300 dark:border-white/20
-                                rounded-xl
-                                p-6
-                                transition-all duration-300
-                                hover:-translate-y-2
-                                hover:shadow-xl
-                                hover:border-blue-500'
-                                key={index}>
-                                <Image src={isDarkMode ? iconDark : icon} alt={title} className='w-10 h-10 mt-4' />
+                            <li
+                                key={index}
+                                className="border border-gray-300 dark:border-white/20 rounded-xl p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+                                <div className="text-3xl text-blue-600 dark:text-white mt-2">
+                                    {icon}
+                                </div>
+
                                 <h3 className='my-4 text-xl font-semibold text-blue-700 dark:text-white'>{title}</h3>
                                 <p className='text-gray-600 dark:text-gray-300 text-sm'>{description}</p>
                             </li>

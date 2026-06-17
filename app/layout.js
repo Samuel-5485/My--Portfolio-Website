@@ -21,13 +21,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
-      <head>
-        <script
+      
+       {/**<head> 
+        * <script
           dangerouslySetInnerHTML={{
             __html: `(function(){try{var t=localStorage.getItem('theme');if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches)){document.documentElement.classList.add('dark')}}catch(e){}})();`,
           }}
-        />
-      </head>
+        /></head> */} 
+    
       <body
         className={`${outfit.variable} ${ovo.variable} antialiased leading-8 overflow-x-hidden`}
       >

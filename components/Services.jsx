@@ -3,14 +3,13 @@
 import { assets, serviceData } from "@/assets/assets";
 import React, { useState } from "react";
 import Image from "next/image";
+import { FaTimes } from "react-icons/fa";
 
 const Services = ({ isDarkMode }) => {
-
   const [selectedService, setSelectedService] = useState(null);
 
   return (
-    <div id="services" className="w-full px-[12%] py-10 scroll-mt-20">
-
+    <div className="max-w-6xl mx-auto px-4">
       <h4 className="text-center mb-2 text-lg font-Ovo text-gray-600 dark:text-gray-400">
         What I offer
       </h4>
@@ -25,43 +24,28 @@ const Services = ({ isDarkMode }) => {
         applications that are functional, user-friendly, and impactful.
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 my-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 max-w-2xl mx-auto gap-4 my-5 ">
 
-        {serviceData.map((service, index) => (
-
+        {serviceData.map(({ icon, title, description, fullDescription }, index) => (
           <div
             key={index}
             className="
-              border border-gray-400 dark:border-white/30
-              rounded-lg
-              px-8
-              py-12
-              cursor-pointer
-              transition-all
-              duration-500
-              hover:bg-lightHover
-              dark:hover:bg-darkHover
-              hover:-translate-y-2
-              hover:shadow-lg
-            "
-          >
+             border border-gray-300 dark:border-white/20 rounded-xl p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+            {/* ICON (FIXED) */}
+            <div className="text-3xl text-blue-600 dark:text-white">
+              {icon}
+            </div>
 
-            <Image
-              src={service.icon}
-              alt=""
-              className="w-10"
-            />
-
-            <h3 className="text-lg my-4 text-gray-700 dark:text-white">
-              {service.title}
+            <h3 className="my-4 text-xl font-semibold text-blue-700 dark:text-white">
+              {title}
             </h3>
 
             <p className="text-sm text-gray-600 dark:text-gray-300 leading-5">
-              {service.description}
+              {description}
             </p>
 
             <button
-              onClick={() => setSelectedService(service)}
+              onClick={() => setSelectedService({ icon, title, description, fullDescription })}
               className="flex items-center gap-2 text-sm mt-5 text-gray-800 dark:text-white"
             >
               Read More
@@ -76,26 +60,21 @@ const Services = ({ isDarkMode }) => {
                 className="w-4"
               />
             </button>
-
           </div>
-
         ))}
 
       </div>
 
       {/* Modal */}
-
       {selectedService && (
-
-        <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-50">
-
+        <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-50 ">
           <div className="relative bg-white dark:bg-darkTheme p-8 rounded-xl max-w-lg w-[90%] shadow-xl">
 
             <button
               onClick={() => setSelectedService(null)}
-              className="absolute top-4 right-4 text-xl text-black dark:text-white"
+              className="absolute top-4 right-4 text-xl hover:text-red-500 transition"
             >
-              ✕
+              <FaTimes/>
             </button>
 
             <h2 className="text-2xl font-bold mb-4 text-black dark:text-white">
@@ -107,11 +86,8 @@ const Services = ({ isDarkMode }) => {
             </p>
 
           </div>
-
         </div>
-
       )}
-
     </div>
   );
 };

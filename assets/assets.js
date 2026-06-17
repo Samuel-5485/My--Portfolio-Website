@@ -76,25 +76,45 @@ export const assets = {
 
 export const workData = [
     {
-        title: 'Frontend project',
-        description: 'Building responsive and interactive websites',
+        title: 'MultiLinguaAI',
+        description: 'AI-powered multilingual education platform',
+        technologies:'React • Python • AI',
         bgImage: '/work-1.png',
+        github:'...',
+        live:'...'
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
+        title: 'Portfolio Website',
+        description: 'Personal portfolio with dark mode',
+        technologies:'Next.js • React',
         bgImage: '/work-2.png',
+        github:'...',
+        live:'...'
     },
     {
-        title: 'Photography site',
+        title: 'Wellness Streak',
         description: 'Web Design',
         bgImage: '/work-3.png',
+        technologies:'TypeScript • React',
+        github:'https://github.com/Samuel-5485/wellness_streaks',
+        live:'...'
     },
     {
-        title: 'UI/UX designing',
+        title: 'Happy Birthday Gift',
         description: 'UI/UX Design',
         bgImage: '/work-4.png',
+        technologies:'TypeScript • React',
+        github:'https://github.com/Samuel-5485/happy-birthday-gift-projects-',
+        live:'https:happy-birthday-gift-projects.vercel.app'
     },
+      {
+        title: 'Employee Management System',
+        description: 'UI/UX Design',
+        bgImage: '/work-4.png',
+        technologies:'TypeScript • React',
+        github:'https://github.com/Samuel-5485/PRODIGY_FS_02/tree/main/Employee%20Management%20System',
+        live:'...'
+      } 
 ];
 
 export const serviceData = [

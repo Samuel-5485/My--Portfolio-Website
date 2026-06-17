@@ -111,9 +111,42 @@ export const infoList = [
     { icon: <FaGraduationCap/>, title: 'Education', description: 'Computer Science undergraduate at Ambo University with a strong interest in technology stack' },
     { icon: <FaProjectDiagram/>, title: 'Projects', description: 'Built academic and personal projects to strengthen my practical development and problem-solving skills.' },
     { icon: <FaBook/>, title: 'Currently Learning', description: 'Expanding my knowledge in Data Structure & Algorithm, Machine Learning, Data Science, Information Security, and modern development practices.' },
-    { icon: <FaTrophy/>, title: 'Achievements', description: 'Recognized through hackathons, online programs, and project-based learning experiences.' }
+    { icon: <FaTrophy/>, title: 'Achievements', description: 'Earned certifications and completed professional programs from globally recognized learning platforms.' }
 ];
 
 export const toolsData = [
     assets.vscode, assets.firebase, assets.figma, assets.git, assets.sql, assets.oracle
+];
+
+export const certifications = [
+  {
+    title: "Responsive Web Design Certification",
+    issuer: "FreeCodeCamp",
+    link: "https://www.freecodecamp.org/certification/samuel-54/responsive-web-design",
+    description: "HTML, CSS, responsive layouts, accessibility."
+  },
+  {
+    title: "Data Analysis Fundamentals",
+    issuer: "Udacity",
+    link: "https://www.udacity.com/certificate/e/5153cd1a-7872-11f0-ae3f-3f57f644920f",
+    description: "Data analysis and interpretation."
+  },
+  {
+    title: "Basic Python",
+    issuer: "UniAthena",
+    link: "https://drive.google.com/file/d/1CXdqrx8gA6N71rKk1BNelcUq8TcOyQpB/view?pli=1",
+    description: "Python fundamentals."
+  },
+  {
+    title: "AWS Educate Introduction to Cloud 101",
+    issuer: "AWS",
+    link: "https://www.credly.com/badges/d652fd88-d6ac-4471-a5e4-7be2f350fbf3/linked_in_profile",
+    description: "Cloud computing fundamentals."
+  },
+  {
+    title: "AI Career Essentials",
+    issuer: "ALX",
+    link: "https://savanna.alxafrica.com/certificates/hB38SFn9f7",
+    description: "AI concepts and career readiness."
+  }
 ];

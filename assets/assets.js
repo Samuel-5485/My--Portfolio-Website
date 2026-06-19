@@ -1,7 +1,7 @@
 import user_image from './user-image.png';
 
 {/**--I have imported the react icon and i have deleted the actual existing icon images */}
-import { FaGlobe, FaMobileAlt, FaPaintBrush, FaPenNib, FaCode, FaGraduationCap, FaProjectDiagram, FaBook, FaTrophy } from "react-icons/fa";
+import { FaGlobe, FaMobileAlt, FaPaintBrush, FaPenNib, FaCode, FaGraduationCap, FaProjectDiagram, FaBook, FaTrophy, FaJava, FaReact } from "react-icons/fa";
 
 
 import vscode from './vscode.png';
@@ -34,9 +34,11 @@ import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import work1 from './work-1.png';
-import work2 from './work-2.png';
+import My_portfolio_homepage_image from './my_portfolio_homepage.png';
 import work3 from './work-3.png';
 import happy_birthday_homepage_image from './happy_birthday_homepage.png';
+import { SiNextdotjs, SiTailwindcss, SiTypescript } from 'react-icons/si';
+import { FaNodeJs } from 'react-icons/fa6';
 
 export const assets = {
     user_image,
@@ -69,7 +71,7 @@ export const assets = {
     right_arrow_bold,
     right_arrow_bold_dark,
     work1,
-    work2,
+    My_portfolio_homepage_image,
     work3,
     happy_birthday_homepage_image
 };
@@ -79,6 +81,9 @@ export const workData = [
         title: 'Academy Portal Management System',
         description: 'Academic Portal Project this project emphasized of object oriented programming...',
         technologies:'Java',
+        techicons:[
+         <FaJava key='ts'/>
+      ],
         bgImage: '/work-1.png',
         github:'https://github.com/Samuel-5485/academic_portal_project_feature_of_Oop_using_java_programming',
         live:'...'
@@ -86,16 +91,24 @@ export const workData = [
     {
         title: 'Portfolio Website',
         description: 'Personal portfolio with dark mode',
-        technologies:'JavaScript • Next.js • React',
-        bgImage: '/work-2.png',
-        github:'...',
+        technologies:'React • Next.js • Tailwind css',
+        techicons:[
+          <FaReact key='react'/>,
+          <SiNextdotjs key='next'/>,
+          <SiTailwindcss key='ts'/>
+        ],
+        bgImage: '/my_portfolio_homepage.png',
+        github:'https://github.com/Samuel-5485/My--Portfolio-Website',
         live:'...'
     },
     {
         title: 'Wellness Streak',
         description: 'Web Design',
         bgImage: '/work-3.png',
-        technologies:'TypeScript • React',
+        technologies:'TypeScript',
+        techicons:[
+         <SiTypescript key='ts'/>
+      ],
         github:'https://github.com/Samuel-5485/wellness_streaks',
         live:'...'
     },
@@ -104,6 +117,10 @@ export const workData = [
         description: 'Happy birthday gift you can give for your friends...',
         bgImage: '/happy_birthday_homepage.png',
         technologies:'TypeScript • React',
+        techicons:[
+         <SiTypescript key='ts'/>,
+         <FaReact/>
+      ],
         github:'https://github.com/Samuel-5485/happy-birthday-gift-projects-',
         live:'https:happy-birthday-gift-projects.vercel.app'
     },
@@ -111,7 +128,11 @@ export const workData = [
         title: 'Secure User Authentication System',
         description: 'This project is a full-stack application designed to provide secure user authentication using modern web technologies.',
         bgImage: '/work-4.png',
-        technologies:'Frontend • Backend',
+        technologiesF:'React.js • Node.js',
+        techicons:[
+          <FaReact key='react'/>,
+          <FaNodeJs key='node'/>         
+        ],
         github:'https://github.com/Samuel-5485/PRODIGY_FS_01/tree/main',
         live:'...'
       } 
@@ -167,6 +188,12 @@ export const certifications = [
     title: "AI Career Essentials",
     issuer: "ALX",
     link: "https://savanna.alxafrica.com/certificates/hB38SFn9f7",
+    description: "AI concepts and career readiness."
+  },
+      {
+    title: "Wellness Hackathon",
+    issuer: "ALX",
+    link: "https://drive.google.com/file/d/1NXa3JDY7_BVwL58gwy8kJgGk6i89GEY1/view?usp=sharing",
     description: "AI concepts and career readiness."
   }
 ];

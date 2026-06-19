@@ -24,7 +24,7 @@ const Works = ({ isDarkMode }) => {
                     >
 
                     <div
-                        className="h-35 sm:h-40 w-full bg-cover bg-center group-hover:scale-110 transition duration-700"
+                        className="h-50 sm:h-50 w-full bg-cover bg-center group-hover:scale-110 transition duration-700"
                         style={{ backgroundImage: `url(${project.bgImage})` }}
                     />
 
@@ -39,8 +39,14 @@ const Works = ({ isDarkMode }) => {
                         </p>
 
                         <div className="flex items-center gap-2 mt-4">
-
-                        <FaCode className="text-blue-600" />
+                         {project.techicons?.map((icon, index) => (
+                            <span
+                            key={index}
+                            className="text-xl text-blue-600 dark:text-white"
+                            >
+                            {icon}
+                            </span>
+                        ))}
 
                         <span className="text-sm text-gray-500 dark:text-gray-400">
                             {project.technologies}
